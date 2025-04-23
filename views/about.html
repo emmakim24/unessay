@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--J Query link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--Montserrat Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Link to Style Sheet-->
+    <link rel="stylesheet" href="../static/style.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://kit.fontawesome.com/097fa6dcc6.js" crossorigin="anonymous"></script>
+
+    <!--Link to Script-->
+    <script defer src="../static/script.js"></script>
+
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emerson Kim">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Duquesne Incline Project">
+    <title>WebDev Project</title>
+</head>
+<body>
+    <div class="website-container">
+        <header>
+            <h1>Duquesne Incline</h1>
+            <img id="header-img" src="../static/logo.jpeg" alt="A photo of Duquesne Incline">
+        </header>
+
+        <nav>
+            <a class = "nav" href="../index.html">Home</a>
+            <a class = "nav" href="visitorInfo.html">Visitor Information</a>
+            <a class = "nav" href="about.html">About</a>
+            <a class = "nav" href="giftShop.html">Gift Shop</a>
+            <a class = "nav" href="contact.html">Contact</a>
+            <a class = "nav" href="citation.html">Citation</a>
+        </nav>
+
+        <section class="sidebar">
+            <section class="sub-sidebar">
+                <h3>Hours</h3>
+                <p id="sidebar-open"></p>
+                <p>Open all days of the week from: 6:30 a.m. to 12:30 a.m</p>
+            </section>
+            <section class="sub-sidebar">
+                <h3>Fares</h3>
+                <p>Adults (Ages 12-64) $2.50 Each Way or $5.00 Round Trip</p>
+                <p>Children (Ages 6-11) $1.25 Each Way or $2.50 Round Trip</p>
+                <p>University of Pittsburgh, Carnegie Mellon University, and Chatham University Students may ride for free with a student ID</p>
+                <p>Go to Visitor Information page for more.</p>
+            </section>
+            <section class="sub-sidebar">
+                <h3>Location</h3>
+                <a class="sidebar-links" href="https://www.google.com/maps/dir//1197+W+Carson+St,+Pittsburgh,+PA+15219/@40.4398533,-80.0587917,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x8834f6af26af42c1:0x29764b2810a682b0!2m2!1d-80.0175922!2d40.4398606?hl=en&entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D">1197 West Carson St. Pittsburgh,</a>
+                <a class="sidebar-links" href="https://www.google.com/maps/dir//1197+W+Carson+St,+Pittsburgh,+PA+15219/@40.4398533,-80.0587917,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x8834f6af26af42c1:0x29764b2810a682b0!2m2!1d-80.0175922!2d40.4398606?hl=en&entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D">PA. 15219</a>
+            </section>
+            <section class="sub-sidebar">
+                <h3>Contact</h3>
+                <p>Phone: 
+                    <a class="sidebar-links" href="tel:4123811665">412-381-1665</a>
+                </p>
+                <p>Email: 
+                    <a class="sidebar-links" href="mailto:duq.incline@duquesneincline.org">duq.incline@duquesneincline.org</a>
+                </p>
+            </section>
+            <section class="sub-sidebar">
+                <h3>Socials</h3>
+                <div class="socials">
+                    <a id = "insta-link" href="https://www.instagram.com/explore/locations/289145085/duquesne-incline-pittsburgh/?hl=en">
+                        <img class="socials-img" src="../static/insta.jpeg" alt="Instagram Icon">
+                    </a>
+                    <a id = "twitter-link" href="https://x.com/duquesneincline">
+                        <img class="socials-img" src="../static/twitter.jpeg" alt="Twitter Icon">
+                    </a>
+                    <a id = "facebook-link" href="https://www.facebook.com/TheDuquesneIncline">
+                        <img class="socials-img" src="../static/facebook.jpeg" alt="Facebook Icon">
+                    </a>
+                    <a id = "yelp-link" href="https://www.yelp.com/biz/duquesne-incline-pittsburgh">
+                        <img class="socials-img" src="../static/yelp.jpeg" alt="Yelp Icon">
+                    </a>
+                    <a id = "viator-link" href="https://www.viator.com/Pittsburgh-attractions/Duquesne-Incline/d22639-a21677">
+                        <img class="socials-img" src="../static/viator.jpeg" alt="Viator Icon">
+                    </a>
+                    <a id = "wikipedia-link" href="https://en.wikipedia.org/wiki/Duquesne_Incline">
+                        <img class="socials-img" src="../static/wikipedia.jpeg" alt="Wikipedia Icon">
+                    </a>
+                    <a id = "pitt-link" href="https://www.visitpittsburgh.com/directory/duquesne-incline/">
+                        <img class="socials-img" src="../static/pitt.jpeg" alt="Pitt Icon">
+                    </a>
+                </div>
+            </section>
+            <footer>
+                <p>
+                    Copyright Emma Kim
+                    <span id="copyYear"></span>
+                    All rights reserved. &copy;
+                </p>
+            </footer>
+        </section>
+
+        <main class="about-container">
+            <h2 id="about-header">About</h2>
+
+            <section class="about-history">
+                <h3>History</h3>
+                <p id="history1">
+                    The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the expanding population of the city, but the problem of easy access was still to be solved.
+                </p>
+                <p id="history2" class="about-more">
+                    Although plans for a freight and passenger incline are known to have existed much earlier, financial backing was exceedingly hard to find--even the modest sum of $47,000--and actual construction was delayed. Eventually, of course, difficulties were overcome and the Incline was built. It was opened to the public May 20, 1877. The Duquesne Incline was the first Pittsburgh incline designed and built by Samuel Diescher, for Kirk Bigham and Associates. Mr. Diescher, an engineer, had become the country's foremost builder of inclines. He was also to design and build most of those that followed.
+                </p>
+                <p id="history3" class="about-more">
+                    At the time of its public opening, it was one of four inclined planes serving the summit of Coal Hill, which later came to be known as Mount Washington. The Duquesne Incline was operated, from 1877 until 1962 by The Duquesne Inclined Plane Company. From 1964 until the present, the Incline has been operated by the Society for the Preservation of The Duquesne Heights Incline; it has been owned by the Port Authority of Allegheny County.
+                </p>
+                <p></p>
+                <p id="history4" class="about-more">
+                    The Society for the Preservation of the Duquesne Heights Incline
+                </p>
+                <p id="history5" class="about-more">
+                    The Society for the Preservation of the Duquesne Heights Incline was formed in 1964 by the Duquesne Heights/Mount Washington neighborhood group that had rescued, repaired, and reopened the Incline in 1963. The purpose was to continue to restore and rehabilitate the cars, equipment, and both stations, and to establish the entire operation as a reliable commuter facility and a popular visitor attraction.  Memberships in the society are available, call for details.
+                </p>
+
+                <button id="about-readMore">read more</button>
+                <button id="about-readLess">read less</button>
+
+                <div class="about-imgs">
+                    <img class="about-img" src="../static/historyImg1.jpeg" alt="History image 1, of Duquesne Incline">
+                    <img class="about-img" src="../static/historyImg3.jpeg" alt="History image 2, of Duquesne Incline Landmark">
+                    <img class="about-img" src="../static/historyImg2.jpeg" alt="History image 3, of Duquesne Incline">
+                </div>
+            </section>
+
+            <section class="about-facts">
+                <h3>Facts</h3>
+                <p id="fact1">
+                    Opened to Public: May 20, 1877
+                </p>
+                <p id="fact2">
+                    Cost to Build: $47,000
+                </p>
+                <p id="fact3">
+                    Length of Track: 794 feet
+                </p>
+                <p id="fact4">
+                    Elevation: 400 feet
+                </p>
+                <p id="fact5">
+                    Grade: 30.5 degrees
+                </p>
+                <p id="fact6">
+                    Speed: 6 miles per hour
+                </p>
+                <p id="fact7">
+                    Passenger: Capacity 18 per car
+                </p>
+            </section>
+
+            <div class="about-tours">
+                <h3>Tours Featuring Duquesne Incline</h3>
+                <p id="tour1">
+                    PITTSBURGH TOURS AND MORE - Pittsburgh Movie Locations, Sports, Breweries, Wineries and More.
+                    <a class="tours-links" href="https://www.pghtoursandmore.net/">https://www.pghtoursandmore.net/</a>
+                    412-323-4707
+                </p>
+                <p id="tour2">
+                    MOLLY'S TOLLEYS -
+                    <a class="tours-links" href="http://www.mollystrolleyspgh.com/">http://www.mollystrolleyspgh.com/</a>
+                    412-323-4707
+                </p>
+                <p id="tour3">
+                    RIVERS OF STEEL -
+                    <a class="tours-links" href="http://www.riversofsteel.com/">http://www.riversofsteel.com/</a>
+                    412-464-4020 or 412-381-8687
+                </p>
+                <p id="tour4">
+                    THE PITTSBURGH TOUR COMPANY - Hop on/Hop off Double Decker tour buses from London. 
+                    <a class="tours-links" href="http://www.pghtours.com/">http://www.pghtours.com/</a>
+                    412-381-8687 
+                </p>
+            </div> 
+        </main>
+    </div>
+</body>
+</html>

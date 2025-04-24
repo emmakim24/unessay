@@ -6,7 +6,7 @@
     font-variation-settings: "wdth" 200;
     padding: 5px;
     margin: 5px;
-    color: #000000;
+    color: white;
 }
 
 .website-container {
@@ -17,7 +17,6 @@
         'sidebar main';
     grid-template-columns: 1fr 3fr;
 }
-
 /* Header */
 header {
     grid-area: header;
@@ -29,13 +28,11 @@ header {
 header h1 {
     font-size: 75px;
     font-weight: 400;
-    color: white;
 }
 header img {
     width: 200px;
     height: auto;
 }
-
 /* Navigation Bar */
 nav {
     grid-area: nav;
@@ -57,7 +54,6 @@ nav a.active {
     border-radius: 10px;
     font-weight: bold;
 }
-
 /* Sidebar */
 .sidebar {
     grid-area: sidebar;
@@ -78,48 +74,32 @@ nav a.active {
     font-weight: 500;
     font-size: 17px;
     margin-bottom: -8px;
+    color: black;
 }
 .sidebar .sub-sidebar p {
     margin-bottom: -5px;
+    color: black;
 }
-.sidebar .sidebar-links {
-    color: #000000;
-}
-.sidebar .socials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5px;
-}
-.sidebar .socials-img {
-    width: 30px;
-    height: auto;
-}
-
 /* Footer */
 footer {
     text-align: center;
     color: #6D6E71;
 }
-
 /* Main Content */
 main {
     grid-area: main;
     background-color: #6D6E71; /* Optional accent – can change to #FFFFFF for cleaner look */
 }
 main h2 {
-    color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
 }
 main p {
     line-height: 1.7;
     font-weight: 300;
 }
-
-/* Headings */
-h3 {
-    font-size: 24px;
+main h3 {
+    font-size: 30px;
     font-weight: 300;
     text-align: center;
 }
@@ -228,6 +208,7 @@ h3 {
     'scopp-historical scopp-language'
     'scopp-outcomes scopp-conclusion'
     'scopp-section scopp-section';
+    grid-template-columns: 1fr 1.25fr;
 }
 #scopp-header {
     grid-area: scopp-header;
@@ -235,15 +216,20 @@ h3 {
 .scopp-intro-section {
     grid-area: scopp-intro; 
     background-color: #043673;
-    color: white;
     padding: 32px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 24px; /* space between image and text */
+    flex-wrap: wrap; /* allows it to stack on smaller screens */
 }
-.scopp-historical {
-    grid-area: scopp-historical; 
-    background-color: #FDB515;
-    color: white;
-    padding: 32px;
+.scopp-intro-text {
+    flex: 1;
+}
+#scopp-intro-img {
+    width: 30%;
+    min-width: 180px;
+    height: auto;
     border-radius: 8px;
 }
 .scopp-program {
@@ -255,7 +241,43 @@ h3 {
 }
 .scopp-participants {
     grid-area: scopp-participants; 
-    background-color: #008F91;
+    background-color: #008F91; 
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+}
+.scopp-participants h4 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.scopp-participants p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    color: white;
+}
+.scopp-participants p strong {
+    font-weight: 600;
+    color: #FDB515;
+}
+.scopp-participants blockquote {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-left: 5px solid #FDB515;
+    padding: 12px 16px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #ffffff;
+}
+
+
+
+
+
+.scopp-historical {
+    grid-area: scopp-historical; 
+    background-color: #FDB515;
     color: white;
     padding: 32px;
     border-radius: 8px;
@@ -288,43 +310,92 @@ h3 {
     padding: 32px;
     border-radius: 8px;
 }
-.scopp-section h3 {
-    font-size: 26px;
-    font-weight: 400;
-    color: #C41230;
-  }
-  .scopp-hero {
-    background-color: #E0E0E0;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .scopp-hero h2 {
-    font-size: 36px;
-    font-weight: 500;
-  }
-  .scopp-hero img {
-    max-width: 90%;
-    margin-top: 20px;
-    border-radius: 10px;
-  }
-  .scopp-quote {
-    background-color: #FFE4E1;
-    padding: 15px;
-    border-left: 5px solid #C41230;
-    margin-top: 15px;
-    font-style: italic;
-  }
-  .cta-link {
-    background-color: #C41230;
+
+
+
+
+.ub-container {
+    display: grid;
+    grid-template-areas: 
+    'ub-header ub-header'
+    'ub-intro ub-intro'
+    'ub-program ub-participants'
+    'ub-historical ub-language'
+    'ub-outcomes ub-conclusion'
+    'ub-section ub-section';
+}
+
+#ub-header {
+    grid-area: ub-header;
+}
+.ub-intro-section {
+    grid-area: ub-intro; 
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 24px; /* space between image and text */
+    flex-wrap: wrap; /* allows it to stack on smaller screens */
+}
+.ub-intro-text {
+    flex: 1;
+}
+#ub-intro-img {
+    width: 30%;
+    min-width: 180px;
+    height: auto;
+    border-radius: 8px;
+}
+.ub-historical {
+    grid-area: ub-historical; 
+    background-color: #FDB515;
     color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  .cta-link:hover {
-    background-color: #941120;
-  }
+    padding: 32px;
+    border-radius: 8px;
+}
+.ub-program {
+    grid-area: ub-program; 
+    background-color: #009647;
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+}
+.ub-participants {
+    grid-area: ub-participants; 
+    background-color: #008F91;
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+}
+.ub-language {
+    grid-area: ub-language; 
+    background-color: #EF3A47;
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+}
+.ub-outcomes {
+    grid-area: ub-outcomes; 
+    background-color: #007BC0;
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+}
+.ub-conclusion {
+    grid-area: ub-conclusion; 
+    background-color: white;
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+}
+.ub-section {
+    grid-area: ub-section; 
+    background-color: white;
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+}
   
 
 
